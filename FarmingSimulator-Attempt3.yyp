@@ -77,6 +77,8 @@
     {"id":{"name":"spr_inv_wheat_seed","path":"sprites/spr_inv_wheat_seed/spr_inv_wheat_seed.yy",},},
     {"id":{"name":"spr_inv_wheat_totemcharm","path":"sprites/spr_inv_wheat_totemcharm/spr_inv_wheat_totemcharm.yy",},},
     {"id":{"name":"spr_inv_wheat","path":"sprites/spr_inv_wheat/spr_inv_wheat.yy",},},
+    {"id":{"name":"spr_ui_bar_buttons","path":"sprites/spr_ui_bar_buttons/spr_ui_bar_buttons.yy",},},
+    {"id":{"name":"spr_ui_inventoryslot_buildings","path":"sprites/spr_ui_inventoryslot_buildings/spr_ui_inventoryslot_buildings.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
