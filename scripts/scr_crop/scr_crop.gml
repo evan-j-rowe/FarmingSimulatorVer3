@@ -1,41 +1,4 @@
-global.templateCrop = {
-	name : "Wheat",
-	buyCost : 10,
-	sellCost : 15,
-	cropIndex : false,
-	cropBaseSize : 1.2,
-	
-	stages : [
-		[spr_crop_wheat_1,0.8],
-		[spr_crop_wheat_2,1],
-		[spr_crop_wheat_3,1],
-		[spr_crop_wheat_4,1.2],
-		[spr_crop_wheat_5,1]
-	],
-	stageCount : 5,
-	
-}
 
-global.crops = {
-	wheat : variable_clone(global.templateCrop),
-}
-
-global.crops.carrot = variable_clone(global.templateCrop)
-global.crops.carrot.name = "Carrot"
-global.crops.carrot.stages = [
-		[spr_crop_carrot_1,0.8],
-		[spr_crop_carrot_2,1],
-		[spr_crop_carrot_3,1],
-		[spr_crop_carrot_4,1.2],
-		[spr_crop_carrot_5,1]
-	]
-global.crops.carrot.stageCount = 5
-
-
-global.cropsOrder = [
-	global.crops.wheat,
-	global.crops.carrot
-]
 
 function crop(type) constructor {
 	cropType = type
@@ -92,6 +55,21 @@ function tile(xP,yP,tiled = false) constructor {
 			0,
 			c_white,
 			1)
+		}
+	}
+	
+	Run = function() {
+		if self.Crop {
+			var ref = struct_get(global.crops,self.Crop.cropType)
+			
+			if self.Crop.stage != ref.stageCount-1 {
+				self.Crop.stageTimer += global.UPDATE_TICK
+				
+				if self.Crop.stageTimer > ref.stages[self.Crop.stage][1] {
+					self.Crop.stage += 1
+					self.Crop.stageTimer = 0
+				}
+			}
 		}
 	}
 }
