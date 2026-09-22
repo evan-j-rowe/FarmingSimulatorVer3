@@ -1,10 +1,10 @@
 global.SAVE_FILE = {}
 
 function createSaveFile() {
-	global.SAVE_FILE = {}
-	global.SAVE_FILE.Tiles = []
+	var SAVE_FILE = {}
+	SAVE_FILE.Tiles = []
 	
-	sftCount = 0
+	sftCount = -1
 	repeat (56) {
 		sftCount += 1
 		
@@ -13,12 +13,22 @@ function createSaveFile() {
 		
 		tilled = (tileX >100 && tileX<180 && tileY>40 && tileY<100)
 		
-		global.SAVE_FILE.Tiles[sftCount] = new tile(
+		SAVE_FILE.Tiles[sftCount] = new tile(
 			tileX,
 			tileY,
 			tilled
 		) 
 	}
+	
+	SAVE_FILE.Inventory = []
+	SAVE_FILE.Hotbar = []
+	SAVE_FILE.HotbarSelected = -1
+	SAVE_FILE.Money = 0
+	
+	//SHOP
+	SAVE_FILE.UnlockedSeeds = 0
+	
+	return SAVE_FILE
 }
 
-createSaveFile()
+global.SAVE_FILE = createSaveFile()

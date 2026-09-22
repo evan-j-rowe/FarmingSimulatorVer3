@@ -1,0 +1,1 @@
+global.SAVE_FILE.HotbarSelected = ITEM_INDEX

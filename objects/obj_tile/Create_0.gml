@@ -1,10 +1,9 @@
 depth = (-bbox_bottom)+ 500
 
 Tile = new tile(x,y,til)
-if til && random_range(0,1) > 0.5 {
-	Tile.Crop = new crop("wheat")
-	Tile.Crop.stage = irandom_range(0,4)
-} else if til {
-	Tile.Crop = new crop("carrot")
-	Tile.Crop.stage = irandom_range(0,4)
-}
+
+array_foreach(global.SAVE_FILE.Tiles,function(v,i) {
+	if (v.X == x && v.Y == y) {
+		Tile = v
+	}
+})
