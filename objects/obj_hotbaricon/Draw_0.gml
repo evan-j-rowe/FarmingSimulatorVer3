@@ -9,5 +9,6 @@ if it {
 	
 	draw_sprite_ext(ref.sprite,0,x,y,hover,hover,0,c_white,1)
 } else {
+	image_index = 3
 	draw_self()
 }

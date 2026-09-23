@@ -14,6 +14,9 @@ global.templateCrop = {
 	],
 	stageCount : 5,
 	
+	sprite : spr_inv_wheat,
+	seedSprite : spr_inv_wheat_seed
+	
 }
 
 global.crops = {
@@ -39,18 +42,3 @@ global.cropsOrder = [
 ]
 
 count = 0
-
-array_foreach(global.cropsOrder,function(cropv,index) {
-		count += 1
-	
-		global.cropMul7835t = log10(count + 1)*3 + (count+1)/5 + 1
-	
-		array_foreach(cropv.stages,function(stge,stgeind) {
-				stge[1] *= global.cropMul7835t * 5
-			}
-		)
-	
-		cropv.buyCost *= power(count+1,3)
-		cropv.sellCost = cropv.buyCost * 1.5
-	}
-)
