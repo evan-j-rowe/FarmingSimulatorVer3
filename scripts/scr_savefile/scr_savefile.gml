@@ -21,7 +21,7 @@ function createSaveFile() {
 	}
 	
 	SAVE_FILE.Inventory = []
-	SAVE_FILE.Hotbar = []
+	SAVE_FILE.Hotbar = [createNewItem("Placeholder"),0,0,0,0,0,0,0]
 	SAVE_FILE.HotbarSelected = -1
 	SAVE_FILE.Money = 0
 	

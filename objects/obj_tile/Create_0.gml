@@ -7,3 +7,5 @@ array_foreach(global.SAVE_FILE.Tiles,function(v,i) {
 		Tile = v
 	}
 })
+
+randomValue = random_range(0,10)
