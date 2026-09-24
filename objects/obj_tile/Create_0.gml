@@ -9,3 +9,4 @@ array_foreach(global.SAVE_FILE.Tiles,function(v,i) {
 })
 
 randomValue = random_range(0,10)
+

@@ -1,0 +1,1 @@
+global.SAVE_FILE.SideSelected = image_index
