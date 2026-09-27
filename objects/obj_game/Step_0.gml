@@ -7,3 +7,5 @@ if global.CURRENT_TIME > global.UPDATE_TICK {
 	
 	global.CURRENT_TIME = 0
 }
+
+global.HIGHLIGHTED_TILE = 0

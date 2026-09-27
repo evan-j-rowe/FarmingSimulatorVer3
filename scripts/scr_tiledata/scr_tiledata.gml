@@ -17,12 +17,17 @@ function tile(xP,yP,tiled = false) constructor {
 	X = xP
 	Y = yP
 	WaterTimer = 0
+	Instance = 0
 	
 	Crop = noone
 	InteractionNumber = irandom_range(0,999)
 	
 	Render1 = function() {
 		draw_sprite(spr_dirt_dry,self.InteractionNumber,self.X,self.Y)
+					
+		if (self.Instance && position_meeting(mouse_x, mouse_y, self.Instance)) {
+			global.HIGHLIGHTED_TILE = self
+		}
 	}
 	
 	Render2 = function() {
