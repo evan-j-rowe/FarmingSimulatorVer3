@@ -15,7 +15,11 @@ global.templateCrop = {
 	stageCount : 5,
 	
 	sprite : spr_inv_wheat,
-	seedSprite : spr_inv_wheat_seed
+	seedSprite : spr_inv_wheat_seed,
+	
+	
+	
+	devName : "wheat"
 	
 }
 
@@ -35,6 +39,7 @@ global.crops.carrot.stages = [
 		[spr_crop_carrot_5,1]
 	]
 global.crops.carrot.stageCount = 5
+global.crops.carrot.devName = "carrot"
 
 global.cropsOrder = [
 	global.crops.wheat,

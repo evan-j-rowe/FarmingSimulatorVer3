@@ -58,7 +58,7 @@ array_foreach(global.cropsOrder,function(cropv,index) {
 		seed.name = string_concat(cropv.name + " Seeds")
 		seed.rarity = ITEM_RARITY.SEED
 		seed.type = ITEM_TYPE.SEED
-		seed.variable = cropv
+		seed.typeVariable = cropv.devName
 		seed.sprite = cropv.seedSprite
 		
 		struct_set(global.items,string_concat(cropv.name+"Seeds"),seed)

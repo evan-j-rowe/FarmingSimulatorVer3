@@ -77,4 +77,12 @@ function tile(xP,yP,tiled = false) constructor {
 			}
 		}
 	}
+	
+	UseItem = function(item) {
+		var ref = struct_get(global.items,item.itemType)
+		if ref.type = ITEM_TYPE.SEED && !self.Crop && self.Tiled {
+			
+			self.Crop = new crop(ref.typeVariable)
+		}
+	}
 }

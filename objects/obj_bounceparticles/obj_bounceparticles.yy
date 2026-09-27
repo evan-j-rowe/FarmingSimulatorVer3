@@ -1,13 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tile",
+  "%Name":"obj_bounceparticles",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":10,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_tile",
+  "name":"obj_bounceparticles",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,16 +25,14 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"til","filters":[],"listItems":[],"multiselect":false,"name":"til","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dirt_dry",
-    "path":"sprites/spr_dirt_dry/spr_dirt_dry.yy",
+    "name":"spr_dirt",
+    "path":"sprites/spr_dirt/spr_dirt.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
