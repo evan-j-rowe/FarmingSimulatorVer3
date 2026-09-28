@@ -83,6 +83,19 @@ function tile(xP,yP,tiled = false) constructor {
 		if ref.type = ITEM_TYPE.SEED && !self.Crop && self.Tiled {
 			
 			self.Crop = new crop(ref.typeVariable)
+			
+			self.TileParticles(15)
+		}
+	}
+	
+	TileParticles = function(count) {
+		repeat count {
+			var part = instance_create_depth(
+				random_range(self.X-10,self.X+10),
+				random_range(self.Y-10,self.Y+10),
+				obj_tile.depth-1,
+				obj_bounceparticles
+			)
 		}
 	}
 }
