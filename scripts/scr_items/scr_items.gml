@@ -30,6 +30,7 @@ global.templateInventoryAsset = {
 	itemType : "",
 	count : 1,
 	variable1 : 0,
+	useFrame : 0,
 }
 
 function createNewItem(type,quantity = 1) {
@@ -38,6 +39,11 @@ function createNewItem(type,quantity = 1) {
 	it.count = quantity
 	
 	return it
+}
+
+function lowerItemQuantity(item,count =1) {
+	item.count -= count
+	item.useFrame = 1
 }
 
 array_foreach(global.cropsOrder,function(cropv,index) {

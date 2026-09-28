@@ -84,7 +84,9 @@ function tile(xP,yP,tiled = false) constructor {
 			
 			self.Crop = new crop(ref.typeVariable)
 			
-			self.TileParticles(15)
+			self.TileParticles(5)
+			lowerItemQuantity(item)
+			show_debug_message(item.count)
 		}
 	}
 	
