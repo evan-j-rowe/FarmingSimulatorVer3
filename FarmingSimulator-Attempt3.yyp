@@ -88,6 +88,7 @@
     {"id":{"name":"spr_tile_selection_item","path":"sprites/spr_tile_selection_item/spr_tile_selection_item.yy",},},
     {"id":{"name":"spr_tile_selection","path":"sprites/spr_tile_selection/spr_tile_selection.yy",},},
     {"id":{"name":"spr_totem_harvesting","path":"sprites/spr_totem_harvesting/spr_totem_harvesting.yy",},},
+    {"id":{"name":"spr_totem_planting","path":"sprites/spr_totem_planting/spr_totem_planting.yy",},},
     {"id":{"name":"spr_ui_bar_buttons","path":"sprites/spr_ui_bar_buttons/spr_ui_bar_buttons.yy",},},
     {"id":{"name":"spr_ui_inventoryslot","path":"sprites/spr_ui_inventoryslot/spr_ui_inventoryslot.yy",},},
     {"id":{"name":"spr_ui_sidebartype","path":"sprites/spr_ui_sidebartype/spr_ui_sidebartype.yy",},},
