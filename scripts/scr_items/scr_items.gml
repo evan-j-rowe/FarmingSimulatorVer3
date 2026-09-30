@@ -56,7 +56,7 @@ array_foreach(global.cropsOrder,function(cropv,index) {
 			}
 		)
 	
-		cropv.buyCost *= power(count+1,3)
+		//cropv.buyCost *= power(count+1,3)
 		cropv.sellCost = cropv.buyCost * 1.5
 		
 		//WHEAT SEED

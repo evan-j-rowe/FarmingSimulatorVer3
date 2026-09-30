@@ -20,7 +20,7 @@ function createSaveFile() {
 		) 
 	}
 	
-	SAVE_FILE.Inventory = []
+	SAVE_FILE.Inventory = array_create(21,noone)
 	SAVE_FILE.Hotbar = [createNewItem("Placeholder"),createNewItem("WheatSeeds",3),0,0,0,0,0,0]
 	SAVE_FILE.HotbarSelected = -1
 	SAVE_FILE.Money = 0

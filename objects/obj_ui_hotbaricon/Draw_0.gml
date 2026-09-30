@@ -1,4 +1,4 @@
-var it = global.SAVE_FILE.Hotbar[ITEM_INDEX]
+var it = CONTAINER[ITEM_INDEX]
 
 if it {
 	var ref = struct_get(global.items,it.itemType)
