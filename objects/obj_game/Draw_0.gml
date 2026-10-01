@@ -10,7 +10,7 @@ with obj_tile {
 	Tile.Render3()
 }
 
-if (global.HIGHLIGHTED_TILE) {
+if (global.HIGHLIGHTED_TILE) && !global.DRAGGINGRIGHTNOW {
 	if (global.SAVE_FILE.HotbarSelected > -1 &&
 	global.SAVE_FILE.Hotbar[global.SAVE_FILE.HotbarSelected]) {
 		draw_sprite(spr_tile_selection_item,current_time/500,global.HIGHLIGHTED_TILE.X,global.HIGHLIGHTED_TILE.Y)
@@ -21,4 +21,9 @@ if (global.HIGHLIGHTED_TILE) {
 
 with obj_tile {
 	Tile.Render4()
+}
+
+
+if global.DRAGGINGRIGHTNOW && global.DRAGGINGINSTANCE && instance_exists(global.DRAGGINGINSTANCE) {
+	global.DRAGGINGINSTANCE.drawIcon()
 }

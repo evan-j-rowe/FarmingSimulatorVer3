@@ -27,4 +27,27 @@ if HOTBAR && global.SAVE_FILE.HotbarSelected == ITEM_INDEX && CONTAINER[global.S
 	}
 }
 
+if CONTAINER[ITEM_INDEX]  && !global.DRAGGINGRIGHTNOW && mouse_check_button(mb_left) && mouse_x > bbox_left &&
+	mouse_x < bbox_right &&
+	mouse_y > bbox_top &&
+	mouse_y < bbox_bottom {
+		
+	show_debug_message("swes")
+	holdDuration += delta()
+	
+	show_debug_message(holdDuration)
+	if holdDuration  > 0.15 {
+		global.DRAGGINGRIGHTNOW = true
+		global.DRAGGINGID = ITEM_INDEX
+		global.DRAGGINGCONTAINER = CONTAINER
+		global.DRAGGINGINSTANCE = self
+		holdDuration = 0
+		show_debug_message("yass")
+	}
+} else {
+	holdDuration = 0
+}
+
+
+
 //item.useFrame = 1
